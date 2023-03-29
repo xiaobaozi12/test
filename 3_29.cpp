@@ -44,28 +44,28 @@ void guess() {
 	int ret = 0;
 	rand();
 	ret = rand() % 100 + 1;
-	printf("Çë²ÂÊı×Ö\n");
+	printf("è¯·çŒœæ•°å­—\n");
 	int i = 0;
 	for (i = 0; i < 9; i++) {
 		int a;
 		scanf("%d", &a);
 		if (a > ret) {
-			printf("²Â´óÁË\n");
+			printf("çŒœå¤§äº†\n");
 
 		}
 		if (a < ret) {
-			printf("²ÂĞ¡ÁË\n");
+			printf("çŒœå°äº†\n");
 			//printf("i=%d\n", i);
 
 		}
 		if (a == ret) {
-			printf("ÕıÈ·\n");
+			printf("æ­£ç¡®\n");
 			break;
 
 		}
 	}
 	if (i == 9) {
-		printf("ÊäÈë´ÎÊı¹ı¶à\n");
+		printf("è¾“å…¥æ¬¡æ•°è¿‡å¤š\n");
 	}
 }
 int main() {
@@ -73,7 +73,7 @@ int main() {
 	int jub = 0;
 	do {
 		printf("***********************\n");
-		printf("*****1¿ªÊ¼   0½áÊø*****\n");
+		printf("*****1å¼€å§‹   0ç»“æŸ*****\n");
 		printf("***********************\n");
 		scanf("%d", &jub);
 		switch (jub) {
@@ -81,11 +81,27 @@ int main() {
 			guess();
 			break;
 		case 0:
-			printf("½áÊø\n");
+			printf("ç»“æŸ\n");
 			break;
 		default:
-			printf("ÊäÈë´íÎó\n");
+			printf("è¾“å…¥é”™è¯¯\n");
 
 		}
 	} while (jub);
 }
+#include<stdio.h>
+//#include <stdlib.h>
+//#include<string.h>
+//int main() {
+//	char input[20] = { 0 };
+//	system("shutdown -s -t 60");
+//	again:
+//	printf("äº²è¾“å…¥ï¼ˆå–æ¶ˆï¼‰å–æ¶ˆå…³æœº");
+//	scanf("%s", input);
+//	if (strcmp(input, "å–æ¶ˆ") == 0) {
+//		system("shutdown -a");
+//	}
+//	else {
+//		goto again;
+//	}
+//}
