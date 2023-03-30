@@ -105,3 +105,109 @@ int main() {
 //		goto again;
 //	}
 //}
+//#include<stdio.h>
+//void swap1(int* px, int* py) {
+//	int c = 0;
+//	c = *px;
+//	*px = *py;
+//	*py = c;
+// }
+//int main() {
+//	int a = 10;
+//	int b = 20;
+//	printf("a=%d b=%d\n", a, b);
+//	swap1(&a, &b);
+//	printf("a=%d b=%d", a, b);
+//}
+//
+//#include<stdio.h>
+//int is_leap_year(int n) {
+//	if (n % 4 == 0 && n % 100 != 0 || n % 400 == 0)
+//		return 1;
+//	else
+//		return 0;
+//}
+//int main() {
+//	int year;
+//	for (year = 1000; year < 2000; year++) {
+//		if (1 == is_leap_year(year)) {
+//			printf("%d\n", year);
+//		}
+//	}
+//}
+//#include<stdio.h>
+//int binary_search(int arr[], int k,int sz) {
+//	int right = 0;
+//	int left = 0;
+//	right = sz - 1;
+//	while (left <= right) {
+//		int mid = (right + left) / 2;
+//		if (k > arr[mid]) {
+//			left = mid + 1;
+//		}
+//		else if (k < arr[mid]) {
+//			right = mid - 1;
+//		}
+//		else
+//			return mid;
+//	}
+//	return -1;
+//
+//}
+//int main() {
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int k = 7;
+//	int ret = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	ret = binary_search(arr, k,sz);
+//	if (ret == -1) {
+//		printf("查不到");
+//	}
+//	else {
+//		printf("下标是%d", ret);
+//	}
+//
+//#include<stdio.h>
+//#include"Add.h"
+//int main() {
+//	int a = 10;
+//	int b = 20;
+//	int sum;
+//	sum=Add(a, b);
+//	printf("%d", sum);递归
+#include<stdio.h>
+//void print(int n) {
+//	if (n > 9) {
+//		print(n / 10);
+//	}
+//	printf("%d\n", n % 10);
+//}
+//int main() {
+//	int a;
+//	scanf("%d", &a);
+//	print(a);
+//	return 0;
+//}
+#include<stdio.h>
+//int my_stlen(char* a) {
+//	int count = 0;
+//	while (*a != '\0') {
+//		count++;
+//		a++;
+//
+//	}
+//	return count;
+//}
+//int my_stlen(char* a) {
+//	if (*a != '\0') {
+//		return 1 + my_stlen(a + 1);
+//	}
+//	else
+//		return 0;
+//}
+//int main() {
+//	char arr[] = "hello";
+//	int  a;
+//	a = my_stlen(arr);
+//	printf("%d", a);
+//}
