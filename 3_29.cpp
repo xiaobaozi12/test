@@ -211,3 +211,83 @@ int main() {
 //	a = my_stlen(arr);
 //	printf("%d", a);
 //}
+
+
+//3_31
+//#include<stdio.h>
+//int Fac(int a) {
+//	if (a <= 1)
+//		return 1;
+//	else
+//		return a*Fac(a - 1);
+//}
+//int main() {
+//	int ret = 0;
+//	int a = 0;
+//	scanf("%d", &a);
+//	ret = Fac(a);
+//	printf("%d", ret);
+//}
+//斐波纳挈数列
+//#include<stdio.h>
+//int Fid(int n) {
+//	/*if (n <= 2)
+//		return 1;
+//	else
+//		return Fid(n - 1) + Fid(n - 2);*/
+//	int a = 1;
+//	int b = 1;
+//	int c = 1;
+//	while (n > 2) {
+//		c = a + b;
+//		a = b;
+//		b = c;
+//		n--;
+//	}
+//	return c;
+//}
+//int main() {
+//	int n;
+//	scanf("%d", &n);
+//	int ret = Fid(n);
+//	printf("第%d个斐波纳挈数是%d\n", n, ret);
+//	return 0;
+//}
+//青蛙跳台阶
+#/*include<stdio.h>
+int jisuan(int a) {
+	if (a <= 2) {
+		return a;
+	}
+	else
+		return jisuan(a - 2) + jiusan(a - 1);
+}
+int main(){
+	int  taijie = 0;
+	scanf("%d", &taijie);
+	int a = jisuan(taijie);
+	printf("%d", a);
+	return 0;
+}*/
+//汉诺塔问题
+//#include<stdio.h>
+//void move(char a, char c) {
+//	printf(" % c-> % c\n", a, c);
+//}
+//void Fra(int n, char a, char b, char c)
+//{
+//	if (n == 1) {
+//		move(a, c);
+//	}
+//	else {
+//		Fra(n - 1, a, c, b);
+//		move(a, c);
+//		Fra(n - 1, b, a, c);
+//	}
+//}
+//int main() {
+//	int n = 0;
+//	scanf("%d", &n);
+//	Fra(n, 'a', 'b', 'c');
+//	return 0;
+//}
