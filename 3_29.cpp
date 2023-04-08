@@ -319,3 +319,31 @@ int main() {
 		printf("%d", arr[i]);
 	}
 }
+//#include<stdio.h>
+////int main() {
+////	int a = 0;
+////	int b = 0;
+////	scanf("%d", &a);
+////	int count = 0;
+////	for (b = 0; b < 32 ; b++) {
+////		if (1 == ((a >>b ) & 1)) {
+////			count++;
+////		}
+////	}
+////	printf("%d", count);
+////	return 0;
+////}
+//struct stu {
+//	char name[10];
+//	int age;
+//	char munber[10];
+//};
+//#include<stdio.h>
+//int main() {
+//	struct stu s1={"张三", 10,"12131313"};
+//	struct stu* sp = &s1;
+//	printf("%s", sp->name);
+//	//printf("%s", (*sp).name);
+//	//printf("%s\n", s1.name);
+//	return 0;
+//}
