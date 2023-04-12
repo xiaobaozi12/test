@@ -347,3 +347,62 @@ int main() {
 //	//printf("%s\n", s1.name);
 //	return 0;
 //}
+
+//
+//#include<stdio.h>
+//int main() {
+//	int a = 0x11223344;
+//	int* pa = &a;
+//	char* pc = &a;
+//	printf("%p\n", pa);
+//	printf("%p", pc);
+//	return 0;
+//}
+#include<stdio.h>
+//
+//	int** ppa = &pa;
+//	printf("%d", **ppa);
+//}
+//int main() {
+//	int a = 10;
+//	int b = 20;
+//	int c = 30;
+//	int i = 0;
+//	int* arr[3] = { &a,&b,&c };
+//	for (i = 0; i < 3; i++) {
+//		printf("%d\n", *(arr[i]));
+//	}
+//}int main() {
+//	int a = 0;
+//	int* pa = &a;
+//	pa = NULL;
+//	*pa = 10;
+//	return 0;
+//}
+//int mystlen(char* re) {
+//	char* aga = re;
+//	char* end = re;
+//	while (*end != '\0') {
+//		end++;
+//		//printf("1");
+//	}
+//	return aga - end;
+//
+//}
+//int main() {
+//	char arr[10] = "lol";
+//	int ret=mystlen(arr);
+//	printf("%d", -ret);
+//}
+//int main() {
+//	int arr[] = { 0,1,2,3,4,5,6,7,8 };
+//	int* p = arr;
+//	int i = 0;
+//	int ret = sizeof(arr) / sizeof(arr[0]);
+//	for (i = 0; i < ret; i++) {
+//		printf("%p==========%p\n", p + i, &arr[i]);
+//	}
+//}
+//int main() {
+//	int a = 10;
+//	int* pa = &a;
