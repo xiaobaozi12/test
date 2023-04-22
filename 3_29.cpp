@@ -88,6 +88,8 @@ int main() {
 			printf("输入错误\n");
 
 		}
+		
+		
 	} while (jub);
 }
 #include<stdio.h>
