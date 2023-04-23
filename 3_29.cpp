@@ -412,3 +412,4 @@ int main() {
 //	int* pa = &a;
 //int main(){
 printf("hello,word")}
+//整数在计算机中存补码
