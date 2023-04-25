@@ -415,3 +415,13 @@ int main() {
 //int main(){
 printf("hello,word")}
 //整数在计算机中存补码
+int main() {
+	int a = 1;
+	char* p = (char*)&a;
+	if (*p == 1) {
+		printf("xiao");
+	}
+	else
+		printf("da");
+	return 0;
+}
