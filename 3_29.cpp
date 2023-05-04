@@ -324,6 +324,47 @@ int main() {
 	for (i = 0; i < sz; i++) {
 		printf("%d", arr[i]);
 	}
+}int add(int a, int b) {
+//	return a + b;
+//}
+//int main() {
+//	int a = 10;
+//	int b = 30;
+//	int c=	add(a, b);
+//	int (*p)(int, int) = add;
+//	
+//	printf("%d", (*p)(2, 3));
+//
+//
+//}
+//void print(char*str) {
+//	printf("%s\n", str);
+//
+//}
+//int main() {
+//	void(*p)(char*) = print;
+//	(*p)("hello");
+//}
+//void(*singal(int, void(*)(int)))(int);
+//typedef void(*ab)(int);
+//ab(singal(int, ab));
+int add(int x, int y) {
+	return x + y;
+}
+int mul(int x, int y) {
+	return x *y;
+}int sub(int x, int y) {
+	return x - y;
+}int div(int x, int y) {
+	return x /y;
+}
+
+int main(){
+	int (*arr[4])(int, int) = { sub,add,mul,div };
+	int i = 0;
+	for (i = 0; i <=3; i++) {
+		printf("%d",arr[i](2, 3));
+	}
 }
 //#include<stdio.h>
 ////int main() {
@@ -395,6 +436,7 @@ int main() {
 //	return aga - end;
 //
 //}
+
 //int main() {
 //	char arr[10] = "lol";
 //	int ret=mystlen(arr);
