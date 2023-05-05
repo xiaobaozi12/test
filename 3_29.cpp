@@ -1,4 +1,77 @@
-//#include<stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
+//void test() {
+//	printf("***************************\n");
+//	printf("1.add   2.sub  3.mul  4.div\n");
+//	printf("            0.break        \n");
+//	printf("****************************\n");
+//
+//}
+//int add(int x, int y) {
+//	return x + y;
+//}int sub(int x, int y) {
+//	return x - y;
+//}int mul(int x, int y) {
+//	return x * y;
+//}int div(int x, int y) {
+//	return x / y;
+//}
+//int main() {
+//	int input = 0;
+//	int x, y;
+//	int(*arr[])(int, int) = { 0,add,sub,mul,div };
+//	do {
+//		test();
+//		scanf("%d", &input);
+//		if (input == 0) {
+//			break;
+//		}
+//		else if (input <= 5 && input > 0) {
+//			printf(" 请输入数\n");
+//			scanf("%d%d", &x, &y);
+//			printf("%d\n", arr[input](x, y));
+//		}
+//
+//		else
+//			printf(" 错误");
+//		
+//
+//
+//	} while (input);
+//}
+int comp(const void* e1,const  void* e2) {
+	if (*(float*)e1 == *(float*)e2)
+		return 0;
+	else if (*(float*)e1 > *(float*)e2)
+		return 1;
+	else
+		return -1;
+}
+void test() {
+	float f[5] = { 2.1,3.4,5.7,7.9,2.0 };
+	int sz = sizeof(f) / sizeof(f[0]);
+	qsort(f, sz, sizeof(f[0]), comp);
+	int i = 0;
+	for (i = 0; i < sz; i++) {
+		printf("%f",f[i]);
+	}
+}
+struct stu
+{
+	char name[10];
+	int age;
+
+
+};
+int comp1(const void* e1, const void* e2) {
+	return ((struct stu*)e1)->age - ((struct stu*)e2)->age;
+}
+int main() {
+	test();
+	struct stu s[3] = { {"zhangsan", 10}, { "lisi", 20 }, { "wangwu", 30 } };
+	int sz = sizeof(s) / sizeof(s[0]);
+	qsort(s, sz, sizeof(s[0]), comp1);
+}//#include<stdio.h>
 //int main() {
 //	int a = 0;
 //	int b = 0; int c = 0;
