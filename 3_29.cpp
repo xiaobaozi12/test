@@ -1,5 +1,37 @@
 #include<stdio.h>
 #include<stdlib.h>
+/#include<stdio.h>
+//int main() {
+//	test1();
+//}
+#include<stdio.h>
+#include<string.h>
+//int main() {
+//	int arr[2][5] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int* p = (int*)( & arr + 1);
+//	int* p1 = (int*)(*(arr + 1));
+//	printf("%d,%d", *(p - 1), *(p1 - 1));
+//
+//}
+void reserve(char* str) {
+	int len = strlen(str);
+	char* right = str+len-1;
+	char* left = str;
+	while (left < right) {
+		char tmp = *left;
+		*left = *right;
+		*right = tmp;
+		left++;
+		right--;
+	}
+
+}
+int main() {
+	char arr[100] = {0};
+	scanf("%s", arr);
+	reserve(arr);
+	printf("%s\n", arr);
+}
 //#include<stdio.h>
 //#include<stdlib.h>
 ////void test() {
